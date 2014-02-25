@@ -1,0 +1,22 @@
+<% content_for :title do %>
+  个人信息设置
+<% end %>
+<div class="box">
+<%= simple_form_for(@user, :url => change_info_user_path(@user), :html => { :method => :put, :class => 'form-horizontal' }) do |f| %>
+
+  <%= render 'layouts/shared/error_exception', :object => @user %>
+  <%= field_set_tag '个人信息设置' do %>
+  <div class="form-inputs">
+    <%= f.input :email, :required => @user.provider.nil?, :autofocus => true %>
+    <%= f.input :nickname, :required => false %>
+    <%= f.input :city, :required => false %>
+    <%= f.input :signature, :required => false %>
+	<%= f.input :introduction, :required => false, :as => :text, :input_html => {:rows => 5, :class => 'span6'} %>
+  </div>
+  <% end %>
+  <div class="form-actions">
+    <%= f.button :submit, "更新个人信息" %>
+  </div>
+
+<% end %>
+</div>

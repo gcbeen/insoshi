@@ -1,0 +1,44 @@
+<div class="box">
+   <h4>粉丝（<%= current_user.followers_count %>）</h4>
+   <% array_split(followers).each do |followers| %>
+	<div class="row-fluid">
+      <% followers.each do |follower| %>
+		<div class='span3'>
+			<%= link_to image_tag(follower.avatar || follower.gravatar_url(rating: 'R', secure: true), width: '50px', height: '50px'), profile_user_path(follower) %>
+			<%= link_to follower.nickname || '', profile_user_path(follower) %>
+	    </div>
+	  <% end %>
+   </div>
+   <% end %>
+</div>
+
+<div class='box'>
+   <h4>关注（<%= current_user.following_users_count %>）</h4>
+   <% array_split(followings).each do |followings| %>
+   <div class="row-fluid">
+	   <% followings.each do |following| %>
+		 <div class='span3'>
+		   <%=link_to image_tag(following.avatar || following.gravatar_url(rating: 'R', secure: true), width: '50px', height: '50px'), profile_user_path(following) %>
+		   <%= link_to following.nickname || '', profile_user_path(following) %>
+		   <%= button_to "取消关注", user_follow_path(following, current_user.get_follow(following)), :method => :delete, :remote => true, :class => 'btn' %>
+	     </div>
+	   <% end %>
+  </div>
+  <% end %>
+</div>
+
+<div class='box'>
+   <h4>推荐用户</h4>
+   <% array_split(to_followings).each do |to_followings| %>
+   <div class="row-fluid">
+	   <% to_followings.each do |to_following| %>
+		   <div class='span3'>
+			 <%= link_to image_tag(to_following.avatar || to_following.gravatar_url(rating: 'R', secure: true), width: '50px', height: '50px'), profile_user_path(to_following) %>
+			 <%= link_to to_following.nickname || '', profile_user_path(to_following) %>
+			 <div class='btn'><i class='icon-plus'></i><%= link_to("关注", user_follows_path(to_following), :method => :post, :remote => true) %></div>
+		   </div>
+	   <% end %>
+   </div>
+   <% end %>
+</div><!--/.well -->
+

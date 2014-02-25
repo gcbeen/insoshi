@@ -1,0 +1,93 @@
+	<% content_for :title do %>
+		话题
+	<% end %>
+<div class="topic">
+	<div class='title'>
+		<div class="pull-right"><%= user_image_link(@topic.user, 48) %></div>
+		<div class="info">
+			<h1><%= @topic.title %></h1>
+			<span><%= publish(@topic) %></span>
+			<span><%= last_reply(@topic) %></span>
+		</div>
+	</div>
+	<div>
+		<div id='content'>
+			<%= sanitize @topic.content %>
+		</div>
+		<div class='share'>
+			<%= social_share_button_tag(@topic.title) %>
+			<div class='pull-right' id='like'>
+			  <%= like_link(@topic) %>
+		  	  <%= favorite_link(@topic) %>
+			  <%= edit_topic %>
+			</div>
+		</div>
+	</div>
+</div>
+<%= render 'comments' %>
+<% content_for :foot do %>
+	<script>
+		$('#comment_body').wysihtml5({locale: 'zh-CN'});
+
+      <% if current_user == @user %>
+		//$('#title').editable({ 
+		//	title: '修改标题',
+		//	url: '<%= user_topic_path current_user, @topic %>',
+		//	resource: 'topic',
+		//	name: 'title',
+		//	mode: 'inline',
+		//	send: 'always',
+		//	ajaxOptions: {
+		//		type: 'put',
+		//		dataType: 'json'
+		//	},
+		//	error: function(response) {
+		//		if(response.status === 500) {
+		//			return "unavailable";
+		//		} else {
+		//			var s = '';
+		//			$.each(response.responseJSON, function(key, value) {
+		//				s += key
+		//				$.each(value, function(key, value) {
+		//					s += value;
+		//				})
+		//			});
+		//			return s;
+		//		}
+		//	}
+		//});
+		$('#content').editable({ 
+			title: '修改内容',
+			type: 'wysihtml5',
+			wysihtml5: { locale: 'zh-CN' },
+			url: '<%= user_topic_path current_user, @topic %>',
+			resource: 'topic',
+			mode: 'inline',
+			name: 'content',
+			send: 'always',
+			ajaxOptions: {
+				type: 'put',
+				dataType: 'json'
+			},
+			error: function(response) {
+				if(response.status === 500) {
+					return "unavailable";
+				} else {
+					var s = '';
+					$.each(response.responseJSON, function(key, value) {
+						s += key
+						$.each(value, function(key, value) {
+							s += value;
+						})
+					});
+					return s;
+				}
+			}
+		});
+      <% end %>
+	  $('#edit').click(function(e){    
+         e.stopPropagation();
+	     $('#content').editable('toggle');
+      });
+	</script>
+<% end %>

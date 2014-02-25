@@ -1,0 +1,34 @@
+<%= simple_form_for @item, :html => { :class => 'form-horizontal' } do |f| %>
+  <%#= f.error_notification %>
+  <%= render 'layouts/shared/error_exception', :object => @item %>
+  <%= field_set_tag @item_title do %>
+  <div class='form-inputs'>
+  <%= f.input :title %>
+  <%= f.input :description, input_html: { rows: 3 } %>
+  <%#= f.input :description, :as => :ckeditor, :input_html => { :ckeditor => { :height => 400 } } %>
+  <%= f.input :avatar %>
+  </div>
+  <% end %>
+  <div class="form-actions">
+  <%= f.button :submit, :class => 'btn-primary' %>
+  <%= submit_tag '取消', :type => :reset, :class => "btn btn-danger" %>
+  </div>
+<% end %>
+<div id='div_editor'></div>
+<% content_for :foot do %>
+	<script>
+		$('#item_description').wysihtml5({locale: 'zh-CN'});
+	//	{
+	//		"font-styles": true, //Font styling, e.g. h1, h2, etc. Default true
+	//		"emphasis": true, //Italics, bold, etc. Default true
+	//		"lists": true, //(Un)ordered lists, e.g. Bullets, Numbers. Default true
+	//		"html": false, //Button which allows you to edit the generated HTML. Default false
+	//		"link": true, //Button to insert a link. Default true
+	//		"image": true, //Button to insert an image. Default true,
+	//		"color": false //Button to change color of font
+	//	});
+		//CKEDITOR.replace( 'item_description', {
+		//    customConfig: '../custom_ckeditor/config.js'
+		//});
+	</script>
+<% end %>

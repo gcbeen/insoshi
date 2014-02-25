@@ -1,0 +1,23 @@
+<% content_for :title do %>
+	博客
+<% end %>
+<div class='box white blogs'>
+<%= render 'shared/info' if current_user.id != @user.id %>
+	<% if current_user.id == @user.id %><h2>博文</h2><% end %>
+	<% @blogs.each do |blog| %>
+	<div class='blog'>
+		<div class='pull-right'><span><%= blog.comments_count %></span></div>
+		<div class='info'>
+			<div><%= link_to blog.title, user_blog_path(@user, blog) %></div>
+			<div><span><%= blog.user.nickname %></span> <span><%= last_reply(blog) %></span></div>
+		</div>
+	</div>
+	<% end %>
+<%= will_paginate @blogs %>
+</div>
+<% content_for :foot do %>
+	<script>
+		$('#blogs').addClass('active')
+	</script>
+<% end %>
+

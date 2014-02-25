@@ -1,0 +1,4 @@
+$('.comments>.comment:last').after('<%= j render('comment', object: @comment) %>');
+$('#comment_body').data("wysihtml5").editor.clear();
+$('#blank').remove();
+

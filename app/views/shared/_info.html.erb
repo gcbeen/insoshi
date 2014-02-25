@@ -1,0 +1,8 @@
+<ul class="nav nav-tabs">
+	<li id="profile"><%= link_to '个人信息', profile_user_path(@user) %></li>
+	<li id='blogs'><%= link_to '博客', user_blogs_path(@user) %></li>
+	<li id='topics'><%= link_to '帖子', user_topics_path(@user) %></li>
+	<li id='comments'><%= link_to '回复', user_comments_path(@user) %></li>
+	<li id='favorites'><%= link_to '收藏', user_favorites_path(@user) %></li>
+</ul>
+

@@ -1,0 +1,135 @@
+// Place all the styles related to the blogs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+caption {
+    background-color: #F5F5F5;
+    //border-radius: 3px 3px 0 0;
+    line-height: 2em;
+}
+.table tr:last-child td {
+	border-bottom: 1px solid #DDD;
+}
+.table tr td:last-child {
+	width: 20px;
+}
+.span8 .pagination {
+	margin: 0;
+	padding: 5px 10px 5px 10px;
+	background-color: #f5f5f5;
+	//border-radius: 0 0 3px 3px;
+	ul {
+	  box-shadow: none;
+	}
+}
+.span8 .table {
+    margin-bottom: 0;
+}
+.table p {
+  margin: 0;
+}
+.table tr td {
+    vertical-align: middle;
+}
+.social-share-button {
+	display: inline;
+}
+.share {
+	margin: 10px 0 20px;
+	background-color: #f5f5f5;
+	border-radius: 0 0 3px 3px;
+}
+.like_red,
+.favorite_red {
+	color: red;
+}
+.blog, .topic, .comments, #new_comment, .box {
+	h2 {
+		font-size: 16px;
+		margin: 0 -10px;
+		padding: 0 10px 10px 10px;
+		border-bottom: 1px solid #ddd;
+		text-align: center;
+		color: #999;
+	} 
+	h1 {
+		font-size: 22px;
+		color: #333;
+		text-align: left;
+		line-height: 100%;
+		margin-bottom: 8px;
+	}
+	background-color: #fff;
+    border-radius: 4px 4px 4px 4px;
+	padding: 10px 5px 5px
+}
+
+.box .row-fluid {
+	padding: 0 7px 5px;
+}
+#new_comment, .comments {
+    margin-top: 20px;
+}
+
+.infos {
+	padding-left: 58px;
+}
+
+/*
+.box h4 {
+  margin-left: -5px;
+  margin-right: -5px;
+  background-color: #f5f5f5;
+  border-bottom: 1px solid #ddd;
+  color: #666;
+  border-radius: 4px 4px 0 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 20px;
+}*/
+
+#sidebar h4 {
+  font-size: 12px;
+  line-height: 100%;
+  color: #999;
+  border-radius: 4px 4px 0 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  margin: 0 -10px 10px -10px;
+  padding-bottom: 8px;
+}
+
+
+.blog, .topic {
+  .share,
+  .well {
+    margin-left: -5px;
+    margin-right: -5px;
+  }
+}
+
+.comments, .blogs, .topics {
+  .pagination {
+    margin: 0 -5px -5px;
+  }
+}
+
+.comments .comment, .blogs .blog, .topics .topic {
+  padding: 10px 5px 15px;
+  border-bottom: 1px solid #ddd;
+}
+.blogs .blog .pull-right span,
+.topics .topic .pull-right span {
+	padding: 2px 12px;
+	border-radius: 10px;
+	background-color: #98acdf;
+	color: white;
+}
+
+.blog .title, .topic .title {
+	border-bottom: 1px solid #ddd;
+	padding-bottom: 15px;
+}
+
+#blank {
+	text-align: center;
+}

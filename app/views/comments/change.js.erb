@@ -1,0 +1,4 @@
+$('<%= "#reply-#{@comment.floor_num} .body" %>').html('<%= j sanitize(@comment.body) %>');
+$('#new_comment').attr('action', '<%= reply_blog_path(@blog) %>');
+$('#comment_body').data("wysihtml5").editor.clear();
+

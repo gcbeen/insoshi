@@ -1,0 +1,20 @@
+<% content_for :title do %>
+	相册
+<% end %>
+<div class='box'>
+	<h2>相册</h2>
+	<% array_split(@photoes.to_a).each do |photoes| %>
+	<div class="row-fluid">
+		<% photoes.each do |photo| %>
+		<div class='span3'>
+			<div class='photo'>
+				<%= link_to image_tag(photo.avatar.url(:medium)), photo_path(photo) %>
+				<%= link_to '删除', photo_path(photo), method: :delete, class: 'btn' %>
+			</div>
+		</div>
+	    <% end %>
+    </div>
+	<% end %>
+	<%= will_paginate @photoes %>
+	<div class="new"><%= link_to '上传相片', new_photo_path, class: 'btn' %></div>
+</div>

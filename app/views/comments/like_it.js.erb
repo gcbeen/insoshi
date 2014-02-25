@@ -1,0 +1,2 @@
+$('<%= "#reply-#{@comment.floor_num} .pull-right a i.icon-heart" %>').toggleClass('like_red', <%= current_user.is_like @comment %>)
+$('<%= "#reply-#{@comment.floor_num} .pull-right span.like_count" %>').html(<%= @comment.likes.count %>)

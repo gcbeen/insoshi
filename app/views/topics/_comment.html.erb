@@ -1,0 +1,11 @@
+<div class='comment' id='<%= "reply-#{object.floor_num}" %>'>
+	<div class="pull-left"><%= user_image_link(object.user, 48) %></div>
+	<div class="infos">
+		<div class="info">
+			<span class="name"><%=link_to object.user.nickname, profile_user_path(object.user) %></span>
+			<span class="time"><%= object.floor_num %>楼，<%= times_ago object.created_at %></span>
+			<span class="pull-right"><%= like_link(object) %><%= reply_link(object)  %> <%= edit_comment(object, modify_topic_user_comment_path(@topic, current_user, object)) %></span>
+		</div>
+		<div class='body'><%= sanitize object.body %></div>
+	</div>
+</div>

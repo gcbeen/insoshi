@@ -1,0 +1,18 @@
+<% content_for :title do %>
+	激活帐号
+<% end %>
+<div class='box'>
+<%= simple_form_for(resource, :as => resource_name, :url => confirmation_path(resource_name), :html => { :method => :post, :class => 'form-horizontal' }) do |f| %>
+  <%#= f.error_notification %>
+  <%= render 'layouts/shared/error_exception', :object => resource %>
+  <%#= f.full_error :confirmation_token %>
+  <%= field_set_tag '激活帐号' do %>
+  <div class="form-inputs">
+	  <%= f.input :email, :required => true, :autofocus => true, :hint => '发送激活链接到您的邮箱' %>
+  </div>
+  <% end %>
+  <div class="form-actions">
+    <%= f.button :submit, "发送" %>
+  </div>
+<% end %>
+</div>

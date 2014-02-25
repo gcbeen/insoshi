@@ -1,0 +1,31 @@
+<% content_for :title do %>
+	相片
+<% end %>
+<div class="box">
+	<h2>相片</h2>
+	<div>
+		<div class='photo'>
+			<%= image_tag @photo.avatar.url %>
+			<div id='origin' style="display: none;"><%= @photo.avatar.url %></div>
+			<div><%= link_to '复制地址', 'javascript:void(0)', :id => "copy-origin", :class => 'btn', 'data-clipboard-target' => "origin" %></div>
+		</div>
+		<div class="medium photo">
+			<%= image_tag @photo.avatar.url(:medium) %>
+			<div id='medium' style="display: none;"><%= @photo.avatar.url %></div>
+			<div><%= link_to '复制地址', 'javascript:void(0)', :id => "copy-medium", :class => 'btn', 'data-clipboard-target' => "medium" %></div>
+		</div>
+		<div class="thumb photo">
+			<%= image_tag @photo.avatar.url(:thumb) %>
+			<div id='thumb' style="display: none;"><%= @photo.avatar.url %></div>
+			<div><%= link_to '复制地址', 'javascript:void(0)', :id => "copy-thumb", :class => 'btn', 'data-clipboard-target' => "thumb" %></div>
+		</div>
+	</div>
+	<div class="new"><%= link_to '上传相片', new_photo_path, class: 'btn' %></div>
+</div>
+<% content_for :foot do %>
+	<script>
+		new ZeroClipboard($('#copy-origin'))
+		new ZeroClipboard($('#copy-thumb'))
+		new ZeroClipboard($('#copy-medium'))
+	</script>
+<% end %>

@@ -1,0 +1,24 @@
+<div class='box topics'>
+	<h2>话题</h2>
+	<% @topic_activities.each do |topic|  %>
+	<div class='topic'>
+		<div class='pull-right'><span><%= topic.comments_count %></span></div>
+		<div class='info'>
+			<div><%= link_to topic.title, user_topic_path(topic.user, topic) %></div>
+			<div><span><%= topic.user.nickname %></span> <span><%= last_reply(topic) %></span></div>
+		</div>
+	</div>
+	<% end %>
+</div>
+<div class="box blogs">
+	<h2>博客</h2>
+	<% @blog_activities.each do |blog| %>
+	<div class='blog'>
+		<div class='pull-right'><span><%= blog.comments_count %></span></div>
+		<div class='info'>
+			<div><%= link_to blog.title, user_blog_path(blog.user, blog) %></div>
+			<div><span><%= blog.user.nickname %></span> <span><%= last_reply(blog) %></span></div>
+		</div>
+	</div>
+	<% end %>
+</div>

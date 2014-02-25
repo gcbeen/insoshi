@@ -1,0 +1,4 @@
+$('.blog .pull-right a i.icon-heart').toggleClass('like_red', <%= current_user.is_like @blog %>)
+$('.blog .pull-right span.like_count').html(<%= @blog.likes.count %>)
+//$('#like').html('<%#= escape_javascript(render :partial => "like") %>')
+

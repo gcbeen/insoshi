@@ -1,0 +1,13 @@
+<div class="comments">
+	<% if @comments.blank? %>
+		<div id="blank" class="comment">暂无评论</div>
+	<% end %>
+	<% @comments.each_with_index do |comment, index|  %>
+		<%= render 'comment', object: comment  %>
+	<% end %>
+	<%= will_paginate @comments %>
+</div>
+<%= simple_form_for @comment, url: reply_blog_path(@blog), remote: true do |f| %>
+	<%= f.input_field :body, class: 'span8', as: :text %>
+	<%= f.button :submit, '提交回复', disable_with: '回复中...' %>
+<% end %>

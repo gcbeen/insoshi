@@ -1,0 +1,29 @@
+<% content_for :title do %>
+	收藏
+<% end %>
+<div class='box white topics'>
+<%= render 'shared/info' if current_user.id != @user.id %>
+	<h2>话题收藏</h2>
+	<% @topic_favables.each do |favable| %>
+	<div class='topic'>
+		<% logger.info favable %>
+		<% logger.info '================================================================' %>
+		<%= render :partial => 'favable', :locals => { :favable => favable } %>
+	</div>
+	<% end %>
+</div>
+<div class="box blogs">
+	<h2>博客收藏</h2>
+	<% @blog_favables.each do |favable| %>
+	<div class='blog'>
+		<%#= render 'favable', locals: { favable: favable } %>
+		<%= render :partial => 'favable', :locals => { :favable => favable } %>
+	</div>
+	<% end %>
+</div>
+<% content_for :foot do %>
+	<script>
+		$('#favables').addClass('active')
+	</script>
+<% end %>
+

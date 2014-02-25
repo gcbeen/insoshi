@@ -1,0 +1,7 @@
+<p>您好 <%= @resource.email %>!</p>
+
+<p>您登录失败过多，帐号已被锁。</p>
+
+<p>点击下面的链接解除锁定:</p>
+
+<p><%= link_to '帐号解锁', unlock_url(@resource, :unlock_token => @token) %></p>

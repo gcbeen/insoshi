@@ -1,0 +1,22 @@
+<% content_for :title do %>
+	写博文
+<% end %>
+<div class='box'>
+<%= simple_form_for @blog, :url => user_blogs_path(current_user), :html => { :class => 'form-horizontal' } do |f| %>
+	<%= render 'layouts/shared/error_exception', :object => @blog %>
+	<%= field_set_tag '写博文' do %>
+	<div class="form-inputs">
+		<%= f.input :title, input_html: {class: 'span6'}, required: true %>
+		<%= f.input :content, input_html: {class: 'span6'}, as: :text, required: true %>
+	</div>
+	<% end %>
+	<div class="form-actions">
+		<%= f.button :submit, :value => '发表博文', :class => 'btn-primary' %>
+	</div>
+<% end %>
+</div>
+<% content_for :foot do %>
+	<script>
+		$('#blog_content').wysihtml5({locale: 'zh-CN'});
+	</script>
+<% end %>

@@ -1,0 +1,235 @@
+<div class="page-header">
+	<h3>Item列表</h3>
+</div>
+<table class="table table-striped table-bordered table-hover">
+	<thead>
+		<tr>
+			<th>id</th>
+			<th>title</th>
+			<th>description</th>
+			<th>created at</th>
+			<th><%=t '.actions', :default => t("helpers.actions") %></th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr class='success'>
+			<td>kkkkkkkkkkkkkkk</td>
+			<td>ddddddddddddddddddd</td>
+			<td>ooooooooooooooooooo</td>
+			<td>pppppppppppppppppppp</td>
+			<td>tttttttttttttttttttttttttttttt</td>
+		</tr>
+		<tr class='error'>
+			<td>kkkkkkkkkkkkkkk</td>
+			<td>ddddddddddddddddddd</td>
+			<td>ooooooooooooooooooo</td>
+			<td>pppppppppppppppppppp</td>
+			<td>tttttttttttttttttttttttttttttt</td>
+		</tr>
+		<tr class='warning'>
+			<td>kkkkkkkkkkkkkkk</td>
+			<td>ddddddddddddddddddd</td>
+			<td>ooooooooooooooooooo</td>
+			<td>pppppppppppppppppppp</td>
+			<td>tttttttttttttttttttttttttttttt</td>
+		</tr>
+		<tr class='info'>
+			<td>kkkkkkkkkkkkkkk</td>
+			<td>ddddddddddddddddddd</td>
+			<td>ooooooooooooooooooo</td>
+			<td>pppppppppppppppppppp</td>
+			<td>tttttttttttttttttttttttttttttt</td>
+		</tr>
+		<% @items.each do |item| %>
+			<tr>
+				<td><%= link_to item.id, item_path(item) %></td>
+				<td><%= link_to item.title, '#', id: "title-#{item.id}" %></td>
+				<td><%= link_to sanitize(item.description), '#', id: "description-#{item.id}" %></td>
+				<td><%=l item.created_at %></td>
+				<td>
+					<%= link_to t('.edit', :default => t("helpers.links.edit")),
+						edit_item_path(item), :class => 'btn btn-mini' %>
+						<%= link_to t('.destroy', :default => t("helpers.links.destroy")),
+							item_path(item),
+							:method => :delete,
+							:data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) },
+							:class => 'btn btn-mini btn-danger' %>
+						</td>
+					</tr>
+				<% end %>
+			</tbody>
+		</table>
+
+		<%= link_to t('.new', :default => t("helpers.links.new")),
+			new_item_path,
+			:class => 'btn btn-primary' %>
+
+			<div class="btn-group" data-toggle="buttons-radio">
+				<button class="btn btn-primary" type="button">左</button>
+				<button class="btn btn-primary" type="button">中</button>
+				<button class="btn btn-primary" type="button">右</button>
+			</div>
+<div class='tabbable'>
+	<ul class="nav nav-tabs">
+	<li class='active'><a href="#tab1" data-toggle='tab'>个人信息</a></li>
+	<li class='dropdown'>
+	<a class='dropdown-toggle' data-toggle='dropdown'>最近活动<b class='caret'></b></a>
+	<ul class="dropdown-menu">
+		<li><a href="#tab2" data-toggle='tab'>活动一</a></li>
+		<li><a href="#">活动二</a></li>
+		<li><a href="#">活动三</a></li>
+	</ul>
+	</li>
+	<li><a href="#tab3" data-toggle='tab'>博客</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="tab1" class="tab-pane active"><p>tab1!</p></div>
+		<div id="tab2" class="tab-pane fade"><p>tab2!</p></div>
+		<div id="tab3" class="tab-pane fade"><p>tab3!</p></div>
+	</div>
+</div>
+
+<div class="pagination pagination-right">
+	<ul>
+		<li class="disabled"><a href="#">前一页</a></li>
+		<li class="active"><a href="#">1</a></li>
+		<li><a href="#">2</a></li>
+		<li><a href="#">3</a></li>
+		<li><a href="#">4</a></li>
+		<li><a href="#">后一页</a></li>
+	</ul>
+</div>
+<div class="alert">
+	<button class="close" type="button" data-dismiss="alert">&times;</button>
+	<strong>Warning!</strong> Best check you self, you're not looking too good.
+</div>
+
+<div class="alert alert-block">
+	<button class="close" type="button" data-dismiss="alert">&times;</button>
+	<h4>Warning!</h4> Best check you self, you're not looking too good.
+</div>
+
+<div class="alert alert-error">
+	<button class="close" type="button" data-dismiss="alert">&times;</button>
+	<strong>Oh snap!</strong> Best check you self, you're not looking too good.
+</div>
+
+<div class="alert alert-success">
+	<button class="close" type="button" data-dismiss="alert">&times;</button>
+	<strong>Well done!</strong> Best check you self, you're not looking too good.
+</div>
+
+<div class="alert alert-info">
+	<button class="close" type="button" data-dismiss="alert">&times;</button>
+	<strong>Heads up!</strong> Best check you self, you're not looking too good.
+</div>
+
+<div class="progress progress-striped active">
+	<div class="bar" style="width: 60%"></div>
+</div>
+
+<ul class="media-list">
+	<li class="media">
+	<a class="pull-left" href="#">
+		<img class="media-object" data-src="holder.js/64x64">
+	</a>
+	<div class="media-body">
+		<h4 class="media-heading">Media heading</h4>
+		kasdjkljlskdjklsdj
+		kdsjklsdjklfj。
+	</div>
+	</li>
+</ul>
+<a class="btn" href="#myModal" role="button" data-toggle="modal">模态框</a>
+<div id='myModal' class="modal hide fade" tabindex='-1' role='dialog' aria-labelledby='myModalLabel' aria-hidden='true'>
+	<div class="modal-header">
+		<button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+		<h3 id='myModalLabel'>对话框标题</h3>
+	</div>
+	<div class="modal-body">
+		<p>One fine body...</p>
+	</div>
+	<div class="modal-footer">
+		<a class="btn" data-dismiss='modal' aria-hidden='true'>关闭</a>
+		<a class="btn btn-primary">保存</a>
+	</div>
+</div>
+<input type="text" class='typeahead' data-provide="typeahead" autocomplete='off'>
+
+<input id="tags" type='text'>
+<input id="spinner">
+<button>kkkk</button>
+<a href='#' class='button'>fff</a>
+<input class='button' value='zzz' />
+<input id="datepicker" type="text">
+<label for="from">from</label><input id="from" type="text">
+<label for="to">to</label><input id="to" type="text">
+<label>timepicker</label>
+<input id="basic_example" type="text">
+
+<input id="basic_example_1" type="text">
+
+<input id="datetime_start" type="text">
+<label>到</label>
+<input id="datetime_end" type="text">
+
+<div class="ui-state-highlight">
+	<p class="ui-icon ui-icon-comment">kkkkkkkkkkkkkkkkkkkkkkkkkkkk</p>
+</div>
+
+<a href="#" id="username" data-type="text" data-resource="post" data-name="username" data-url="/posts/1" data-original-title="Enter username">superuser</a>
+
+<% content_for :foot do %>
+  <script>
+	<% @items.each do |item| %>
+		$('<%= "#title-#{item.id}" %>').editable({ 
+			title: '修改标题',
+			url: '<%= item_path item %>',
+			resource: 'item',
+			name: 'title',
+			send: 'always',
+			ajaxOptions: {
+				type: 'put',
+				dataType: 'json'
+			},
+			error: function(response) {
+				if(response.status === 500) {
+					return "unavailable";
+				} else {
+					var s = '';
+					$.each(response.responseJSON, function(key, value) {
+						s += key
+						$.each(value, function(key, value) {
+							s += value;
+						})
+					});
+					return s;
+				}
+			}
+		});
+		$('<%= "#description-#{item.id}" %>').editable({
+			title: '修改描述',
+			type: 'wysihtml5',
+			wysihtml5: { locale: 'zh-CN' },
+			url: '<%= item_path item %>',
+			resouce: 'item',
+			name: 'description',
+			send: 'always',
+			ajaxOptions: {
+				type: 'put',
+				dataType: 'json'
+			},
+			error: function(response) {
+				if (response.status == 500) {
+					return 'unavailable';
+				}
+			}
+		});
+	<% end %>
+	$('#username').editable();
+    $('#basic_example').datetimepicker();
+    $('#basic_example_1').timepicker();
+    startEndDateTextBox('from', 'to');
+    startEndDateTimeTextBox('datetime_start', 'datetime_end');
+  </script>
+<% end %>

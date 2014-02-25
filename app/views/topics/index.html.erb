@@ -1,0 +1,22 @@
+<% content_for :title do %>
+  话题	
+<% end %>
+<div class='box white topics'>
+<%= render 'shared/info' if current_user.id != @user.id %>
+	<% if current_user.id == @user.id %><h2>话题</h2><% end %>
+	<% @topics.each do |topic| %>
+	<div class='topic'>
+		<div class='pull-right'><span><%= topic.comments_count %></span></div>
+		<div class='info'>
+			<div><%= link_to topic.title, user_topic_path(@user, topic) %></div>
+			<div><span><%= topic.user.nickname %></span> <span><%= last_reply(topic) %></span></div>
+		</div>
+	</div>
+	<% end %>
+<%= will_paginate @topics %>
+</div>
+<% content_for :foot do %>
+	<script>
+		$('#topics').addClass('active')
+	</script>
+<% end %>

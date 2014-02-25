@@ -1,0 +1,33 @@
+<% content_for :title do %>
+	个人信息
+<% end %>
+<div class="box tab-content user-info">
+	<%= render 'shared/info' %>
+	<div class="tab-pane active">
+		<div class='pull-right'><%= user_image_link @user %></div>
+			<!--<dl class='dl-horizontal'>-->
+		<ul>
+			<% unless @user.nickname.blank? %>
+				<li><label>nickname:</label><strong><%= @user.nickname %></strong></li>
+			<% end %>
+			<% unless @user.email.blank? %>
+				<li><label>email:</label><span><%= mail_to @user.email %></span></li>
+			<% end %>
+			<% unless @user.city.blank? %>
+				<li><label>城市:</label><span><%= @user.city %></span></li>
+			<% end %>
+			<% unless @user.signature.blank? %>
+				<li><label>签名:</label><span><%= @user.signature %></span></li>
+			<% end %>
+			<% unless @user.introduction.blank? %>
+				<li><label>个人介绍:</label><span><%= @user.introduction %></span></li>
+			<% end %>
+		</ul>
+			<!--</dl>-->
+	</div>
+</div>
+<% content_for :foot do %>
+	<script>
+		$('#profile').addClass('active')
+	</script>
+<% end %>

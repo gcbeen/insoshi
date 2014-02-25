@@ -1,0 +1,2 @@
+$('.share .pull-right a i.icon-bookmark').toggleClass('favorite_red', <%= current_user.favable? @topic %>)
+$('.share .pull-right span.favorite_count').html(<%= @topic.favorites.count %>)

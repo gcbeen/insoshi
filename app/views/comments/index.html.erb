@@ -1,0 +1,36 @@
+<% content_for :title do %>
+	回复
+<% end %>
+<div class='box white topics'>
+<%= render 'shared/info' if current_user.id != @user.id %>
+	<h2>话题回复</h2>
+	<% @topic_comments.each do |comment| %>
+	<div class='topic'>
+		<div class='pull-right'><span title='喜欢'><%= comment.likes.count %></span></div>
+		<div class='info'>
+			<div><%= link_to comment.commentable.title, user_topic_path(comment.commentable.user, comment.commentable) %></div>
+			<div><%= comment.title %></div>
+			<div><span><%= comment.user.nickname %></span></div>
+		</div>
+	</div>
+	<% end %>
+</div>
+<div class="box blogs">
+	<h2>博客回复</h2>
+	<% @blog_comments.each do |comment| %>
+	<div class='blog'>
+		<div class='pull-right'><span title='喜欢'><%= comment.likes.count %></span></div>
+		<div class='info'>
+			<div><%= link_to comment.commentable.title, user_blog_path(comment.commentable.user, comment.commentable) %></div>
+			<div><%= comment.title %></div>
+			<div><span><%= comment.user.nickname %></span></div>
+		</div>
+	</div>
+	<% end %>
+</div>
+<% content_for :foot do %>
+	<script>
+		$('#comments').addClass('active')
+	</script>
+<% end %>
+

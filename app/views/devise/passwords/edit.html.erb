@@ -1,0 +1,21 @@
+<% content_for :title do %>
+  修改帐号密码
+<% end %>
+<div class='box'>
+<%= simple_form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put, :class => 'form-horizontal' }) do |f| %>
+  <%#= f.error_notification %>
+  <%= render 'layouts/shared/error_exception', :object => resource %>
+  <%= field_set_tag '修改账号密码' do %>
+  <%= f.input :reset_password_token, :as => :hidden %>
+  <%#= f.full_error :reset_password_token %>
+
+  <div class="form-inputs">
+    <%= f.input :password, :label => "新密码", :required => true, :autofocus => true %>
+    <%= f.input :password_confirmation, :label => "确认新密码", :required => true %>
+  </div>
+  <% end %>
+  <div class="form-actions">
+    <%= f.button :submit, "修改密码" %>
+  </div>
+<% end %>
+</div>

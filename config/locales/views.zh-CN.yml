@@ -1,0 +1,38 @@
+zh-CN:
+  layouts:
+    shared:
+      omniauth_link:
+        qq_connect: qq
+        tqq: tencent-weibo
+        weibo: weibo
+        github: github
+        google_oauth2: google-plus
+        google: google-plus
+        omniauth_text: 使用%{provider_name}授权登录
+        qq_connect_text: 腾讯QQ
+        tqq_text: 腾讯微博
+        weibo_text: 新浪微薄
+        github_text: Github
+        google_oauth2_text: Gmail
+        google_text: Gmail
+
+  class_partial:
+    qq_connect: qq
+    tqq: tencent_qq
+    weibo: weibo
+    github: github
+    google_oauth2: google-plus
+  omniauth_text: 使用%{provider_name}授权登录
+  text_partial:
+    qq_connect: 腾讯QQ
+    tqq: 腾讯微博
+    weibo: 新浪微薄
+    github: Github
+    google_oauth2: Gmail
+
+  items:
+    show:
+      title: item
+  users:
+    show:
+      title: 个人信息

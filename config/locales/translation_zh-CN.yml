@@ -1,0 +1,52 @@
+zh-CN:
+  activerecord:
+    errors:
+      messages:
+        record_invalid: 记录错误
+    models:
+      item: 项  #g
+      user: user  #g
+      blog: blog
+      comment: comment
+      topic: topic
+      photo: photo
+
+    attributes:
+      item:
+        avatar_content_type: avatar_content_type  #g
+        avatar_file_name: avatar_file_name  #g
+        avatar_file_size: avatar_file_size  #g
+        avatar_updated_at: avatar_updated_at  #g
+        description: 描述
+        title: 标题
+        avatar: 图片
+
+      user:
+        reset_password_token: 重置密码链接
+        unlock_token: 帐号解锁链接
+        confirmation_token: 激活账号链接
+        password: 密码
+        identity_url: open ID
+        crypted_password: crypted_password  #g
+        current_login_at: current_login_at  #g
+        current_login_ip: current_login_ip  #g
+        email: 邮箱地址
+        last_login_at: last_login_at  #g
+        last_login_ip: last_login_ip  #g
+        last_request_at: last_request_at  #g
+        login: login  #g
+        password_salt: password_salt  #g
+        perishable_token: perishable_token  #g
+        persistence_token: persistence_token  #g
+        single_access_token: single_access_token  #g
+        current_password: 当前密码
+      blog:
+        title: 标题
+        content: 内容
+      comment:
+        body: 回复
+      topic:
+        title: 标题
+        content: 内容
+      photo:
+        avatar: 相片
