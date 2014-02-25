@@ -18,7 +18,7 @@ group :assets do
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'twitter-bootstrap-rails'
   gem 'jquery-ui-rails'
-  gem 'jquery-timepicker-addon-rails', :git => 'git@github.com:gcbeen/jquery-timepicker-addon-rails.git'
+  gem 'jquery-timepicker-addon-rails', :git => 'git://github.com/gcbeen/jquery-timepicker-addon-rails.git'
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
@@ -28,8 +28,8 @@ gem 'jquery-rails'
 
 gem "paperclip", '~> 3.0'
 gem 'simple_form', '~> 2.0.0'
-gem 'bootstrap-editable-rails', :git => 'git@github.com:gcbeen/bootstrap-editable-rails.git'
-gem 'bootstrap-wysihtml5-rails', :git => 'git@github.com:gcbeen/bootstrap-wysihtml5-rails.git'
+gem 'bootstrap-editable-rails', :git => 'git://github.com/gcbeen/bootstrap-editable-rails.git'
+gem 'bootstrap-wysihtml5-rails', :git => 'git://github.com/gcbeen/bootstrap-wysihtml5-rails.git'
 
 gem 'devise'
 gem 'omniauth', '~> 1.1.4'

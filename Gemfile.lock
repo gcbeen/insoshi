@@ -1,19 +1,19 @@
 GIT
-  remote: git@github.com:gcbeen/bootstrap-editable-rails.git
+  remote: git://github.com/gcbeen/bootstrap-editable-rails.git
   revision: c93fb9756ab9618270d079d696b53b69082150c1
   specs:
     bootstrap-editable-rails (0.0.5)
       railties (>= 3.1)
 
 GIT
-  remote: git@github.com:gcbeen/bootstrap-wysihtml5-rails.git
+  remote: git://github.com/gcbeen/bootstrap-wysihtml5-rails.git
   revision: d1286eb1796eb260eb1994ba4174390bfb261966
   specs:
     bootstrap-wysihtml5-rails (0.3.1.23)
       railties (>= 3.0)
 
 GIT
-  remote: git@github.com:gcbeen/jquery-timepicker-addon-rails.git
+  remote: git://github.com/gcbeen/jquery-timepicker-addon-rails.git
   revision: cf74bb4e49ea9e38a3da44c748f6b71b170d5b77
   specs:
     jquery-timepicker-addon-rails (1.4.1)

@@ -17,3 +17,6 @@
 # Ignore all upload files
 /public/system
 /public/ckeditor_assets
+
+# Ignore swp
+*.swp
