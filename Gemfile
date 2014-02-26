@@ -48,11 +48,11 @@ gem 'omniauth-qq'
 gem 'social-share-button'
 
 
-#gem "acts_as_follower", '~> 0.1.1'
-#gem 'gravtastic'
-#gem "google_custom_search"
-#gem 'will_paginate', '~> 3.0'
-#gem 'bootstrap-will_paginate'
+gem "acts_as_follower", '~> 0.1.1'
+gem 'gravtastic'
+gem "google_custom_search"
+gem 'will_paginate', '~> 3.0'
+gem 'bootstrap-will_paginate'
 #gem 'likeit'
 #gem 'acts_as_favable'
 #gem 'acts_as_commentable_with_threading'
