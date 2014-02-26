@@ -17,13 +17,14 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'twitter-bootstrap-rails'
   #gem 'jquery-ui-rails'
   #gem 'jquery-timepicker-addon-rails', :git => 'git://github.com/gcbeen/jquery-timepicker-addon-rails.git'
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
+
+gem 'twitter-bootstrap-rails'
 
 group :production do
   gem 'bootstrap_helper'
