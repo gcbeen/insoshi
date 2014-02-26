@@ -1,7 +1,7 @@
 source 'http://ruby.taobao.org'
 #source 'https://rubygems.org'
 ruby '1.9.3'
-gem 'rails', '3.2.13'
+#gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
@@ -24,7 +24,7 @@ gem "mysql2", "~> 0.3.15"
 #  gem 'uglifier', '>= 1.0.3'
 #end
 
-gem 'jquery-rails'
+#gem 'jquery-rails'
 
 #gem "paperclip", '~> 3.0'
 #gem 'simple_form', '~> 2.0.0'
