@@ -98,10 +98,6 @@ GEM
     treetop (1.4.15)
       polyglot
       polyglot (>= 0.3.1)
-    twitter-bootstrap-rails (2.1.7)
-      actionpack (>= 3.1)
-      execjs
-      railties (>= 3.1)
     tzinfo (0.3.38)
     uglifier (2.3.2)
       execjs (>= 0.3.0)
@@ -117,5 +113,4 @@ DEPENDENCIES
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
   therubyracer
-  twitter-bootstrap-rails
   uglifier (>= 1.0.3)
