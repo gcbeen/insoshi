@@ -17,8 +17,8 @@ group :assets do
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   gem 'twitter-bootstrap-rails'
-  gem 'jquery-ui-rails'
-  gem 'jquery-timepicker-addon-rails', :git => 'git://github.com/gcbeen/jquery-timepicker-addon-rails.git'
+  #gem 'jquery-ui-rails'
+  #gem 'jquery-timepicker-addon-rails', :git => 'git://github.com/gcbeen/jquery-timepicker-addon-rails.git'
   gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
@@ -57,7 +57,7 @@ gem 'acts_as_commentable_with_threading'
 gem 'zeroclipboard-rails'
 gem 'public_activity'
 
-gem 'jquery-hotkeys-rails'
+#gem 'jquery-hotkeys-rails'
 #gem 'jquery-atwho-rails'
 
 group :development do
