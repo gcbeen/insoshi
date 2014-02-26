@@ -70,13 +70,13 @@ end
 #gem "open_id_authentication", "~> 1.2.0"
 #gem 'authlogic-oid', '~> 1.0.4'
 
-gem 'rails_12factor'
+#gem 'rails_12factor'
 
-gem 'i18n_generators'
-gem 'magic_encoding'
-gem 'annotate', '~> 2.6.0'
-gem 'rdiscount'
-gem 'unicorn'
+#gem 'i18n_generators'
+#gem 'magic_encoding'
+#gem 'annotate', '~> 2.6.0'
+#gem 'rdiscount'
+#gem 'unicorn'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
