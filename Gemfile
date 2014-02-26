@@ -26,14 +26,14 @@ end
 
 gem 'jquery-rails'
 
-gem "paperclip", '~> 3.0'
-gem 'simple_form', '~> 2.0.0'
-gem 'bootstrap-editable-rails', :git => 'git://github.com/gcbeen/bootstrap-editable-rails.git'
-gem 'bootstrap-wysihtml5-rails', :git => 'git://github.com/gcbeen/bootstrap-wysihtml5-rails.git'
-
-gem 'devise'
-gem 'omniauth', '~> 1.1.4'
-gem 'omniauth-google-oauth2'
+#gem "paperclip", '~> 3.0'
+#gem 'simple_form', '~> 2.0.0'
+#gem 'bootstrap-editable-rails', :git => 'git://github.com/gcbeen/bootstrap-editable-rails.git'
+#gem 'bootstrap-wysihtml5-rails', :git => 'git://github.com/gcbeen/bootstrap-wysihtml5-rails.git'
+#
+#gem 'devise'
+#gem 'omniauth', '~> 1.1.4'
+#gem 'omniauth-google-oauth2'
 #gem 'oa-oauth', :require => 'omniauth/oauth'
 #gem 'oa-openid', :require => 'omniauth/openid'
 
@@ -41,29 +41,31 @@ gem 'omniauth-google-oauth2'
 #gem 'omniauth-googlefederated'
 
 #gem 'authlogic'
-gem 'omniauth-openid', '~> 1.0.1'
-gem 'omniauth-github'
-gem 'omniauth-weibo-oauth2'
-gem 'omniauth-qq'
-gem 'social-share-button'
-gem "acts_as_follower", '~> 0.1.1'
-gem 'gravtastic'
-gem "google_custom_search"
-gem 'will_paginate', '~> 3.0'
-gem 'bootstrap-will_paginate'
-gem 'likeit'
-gem 'acts_as_favable'
-gem 'acts_as_commentable_with_threading'
-gem 'zeroclipboard-rails'
-gem 'public_activity'
+#gem 'omniauth-openid', '~> 1.0.1'
+#gem 'omniauth-github'
+#gem 'omniauth-weibo-oauth2'
+#gem 'omniauth-qq'
+#gem 'social-share-button'
+
+
+#gem "acts_as_follower", '~> 0.1.1'
+#gem 'gravtastic'
+#gem "google_custom_search"
+#gem 'will_paginate', '~> 3.0'
+#gem 'bootstrap-will_paginate'
+#gem 'likeit'
+#gem 'acts_as_favable'
+#gem 'acts_as_commentable_with_threading'
+#gem 'zeroclipboard-rails'
+#gem 'public_activity'
 
 #gem 'jquery-hotkeys-rails'
 #gem 'jquery-atwho-rails'
 
-group :development do
-  gem 'pry'
-  gem 'pry-rails'
-end
+#group :development do
+#  gem 'pry'
+#  gem 'pry-rails'
+#end
 #gem 'font-awesome-sass'
 
 #gem 'ruby-openid', :require => 'openid'
