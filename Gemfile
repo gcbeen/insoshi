@@ -41,11 +41,11 @@ gem 'omniauth-google-oauth2'
 #gem 'omniauth-googlefederated'
 
 #gem 'authlogic'
-#gem 'omniauth-openid', '~> 1.0.1'
-#gem 'omniauth-github'
-#gem 'omniauth-weibo-oauth2'
-#gem 'omniauth-qq'
-#gem 'social-share-button'
+gem 'omniauth-openid', '~> 1.0.1'
+gem 'omniauth-github'
+gem 'omniauth-weibo-oauth2'
+gem 'omniauth-qq'
+gem 'social-share-button'
 
 
 #gem "acts_as_follower", '~> 0.1.1'
