@@ -233,8 +233,8 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
   config.omniauth :google_oauth2, '22048821128-on3e389hgqg2vg0litekcmorrrkfc7p6.apps.googleusercontent.com', 'eyeAs4Po8WtH7133uh51bNd_'
-  config.omniauth :open_id, :store => OpenID::Store::Filesystem.new('/tmp'), 
-	  :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id', :require => 'omniauth-openid'
+  #config.omniauth :open_id, :store => OpenID::Store::Filesystem.new('/tmp'), 
+  #	  :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id', :require => 'omniauth-openid'
   config.omniauth :github, '861d23c6dd50e051a9b5', '47a7e4e7ba513ea5472cb3e40994fa770a563328'
   config.omniauth :weibo, '3095884180', '1251f5da9e09e592ddee391b94fa8a7b'
   config.omniauth :tqq, '801472228', 'f45ffd7ae71162600c76e5102d52864a'
