@@ -65,6 +65,11 @@ gem 'public_activity'
 group :development do
   gem 'pry'
   gem 'pry-rails'
+  gem 'i18n_generators'
+  gem 'magic_encoding'
+  gem 'annotate', '~> 2.6.0'
+  #gem 'rdiscount'
+  gem 'unicorn'
 end
 #gem 'font-awesome-sass'
 
@@ -74,11 +79,6 @@ end
 
 gem 'rails_12factor'
 
-#gem 'i18n_generators'
-#gem 'magic_encoding'
-#gem 'annotate', '~> 2.6.0'
-#gem 'rdiscount'
-#gem 'unicorn'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'

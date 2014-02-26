@@ -562,3 +562,296 @@ callback({"error":100021,"error_description":"get access token error"});
 (weibo) Callback phase initiated.
 (tqq) Request phase initiated.
 (tqq) Callback phase initiated.
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 127.0.0.1 at 2014-02-26 19:20:34 +0800
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 58.3ms
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2014-02-26 19:20:35 +0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered layouts/shared/_error_exception.html.erb (0.6ms)
+  Rendered devise/sessions/new.html.erb within layouts/application (525.2ms)
+  Rendered layouts/shared/_links.html.erb (1.4ms)
+  Rendered devise/shared/_links.erb (2.0ms)
+  Rendered layouts/shared/_omniauth_link.html.erb (2.4ms)
+  Rendered layouts/shared/_sidebar.html.erb (56.9ms)
+Completed 200 OK in 1942.2ms (Views: 1908.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/assets/favorite.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /favorite.css - 200 OK (2ms)
+
+
+Started GET "/assets/photoes.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /photoes.css - 200 OK (1ms)
+
+
+Started GET "/assets/topics.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /topics.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap-editable.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /bootstrap-editable.css - 304 Not Modified (15ms)
+
+
+Started GET "/assets/bootstrap-social.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /bootstrap-social.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/blogs.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/twitter-bootstrap-static/bootstrap.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /blogs.css - 200 OK (1ms)
+
+
+Started GET "/assets/bootstrap_and_overrides.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /bootstrap_and_overrides.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/comments.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /comments.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/custom-theme/jquery-ui-1.9.2.custom.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /custom-theme/jquery-ui-1.9.2.custom.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/follows.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /follows.css - 304 Not Modified (1ms)
+Served asset /twitter-bootstrap-static/bootstrap.css - 304 Not Modified (73ms)
+
+
+
+
+Started GET "/assets/bootstrap-wysihtml5/index.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Started GET "/assets/bootstrap-wysihtml5/core.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /bootstrap-wysihtml5/index.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/social-share-button.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /bootstrap-wysihtml5/core.css - 304 Not Modified (3ms)
+
+
+Started GET "/assets/font-awesome.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /social-share-button.css - 304 Not Modified (3ms)
+Served asset /font-awesome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/fontawesome-custom.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/home.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /home.css - 304 Not Modified (1ms)
+Served asset /fontawesome-custom.css - 304 Not Modified (4ms)
+
+
+Started GET "/assets/omniauth_callbacks.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /omniauth_callbacks.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/users.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /users.css - 304 Not Modified (1ms)
+
+
+Started GET "/assets/twitter-bootstrap-static/fontawesome.css?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter-bootstrap-static/fontawesome.css - 304 Not Modified (2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-alert.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter/bootstrap/bootstrap-alert.js - 304 Not Modified (28ms)
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /jquery_ujs.js - 304 Not Modified (4ms)
+
+
+Served asset /jquery.js - 304 Not Modified (5ms)
+Started GET "/assets/twitter/bootstrap/bootstrap-modal.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-dropdown.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter/bootstrap/bootstrap-modal.js - 304 Not Modified (3ms)
+
+
+Served asset /twitter/bootstrap/bootstrap-dropdown.js - 304 Not Modified (4ms)
+Started GET "/assets/twitter/bootstrap/bootstrap-scrollspy.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tab.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter/bootstrap/bootstrap-scrollspy.js - 304 Not Modified (3ms)
+
+Served asset /twitter/bootstrap/bootstrap-tab.js - 304 Not Modified (4ms)
+
+Started GET "/assets/twitter/bootstrap/bootstrap-popover.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-button.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter/bootstrap/bootstrap-popover.js - 304 Not Modified (4ms)
+Served asset /twitter/bootstrap/bootstrap-button.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-transition.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-tooltip.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter/bootstrap/bootstrap-transition.js - 304 Not Modified (3ms)
+Served asset /twitter/bootstrap/bootstrap-tooltip.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-collapse.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-carousel.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter/bootstrap/bootstrap-collapse.js - 304 Not Modified (4ms)
+Served asset /twitter/bootstrap/bootstrap-carousel.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/twitter/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-typeahead.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter/bootstrap/bootstrap-typeahead.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/twitter/bootstrap/bootstrap-affix.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter/bootstrap/bootstrap-affix.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /twitter/bootstrap.js - 304 Not Modified (21ms)
+Served asset /bootstrap.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/bootstrap-editable.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/bootstrap-editable-rails.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /bootstrap-editable-rails.js - 304 Not Modified (4ms)
+Served asset /bootstrap-editable.js - 304 Not Modified (4ms)
+
+
+Started GET "/assets/bootstrap-wysihtml5/wysihtml5.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/bootstrap-wysihtml5/core.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /bootstrap-wysihtml5/core.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/bootstrap-wysihtml5/index.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /bootstrap-wysihtml5/index.js - 304 Not Modified (6ms)
+Served asset /bootstrap-wysihtml5/wysihtml5.js - 304 Not Modified (43ms)
+
+
+Started GET "/assets/inputs-ext/wysihtml5.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+
+
+Started GET "/assets/bootstrap-wysihtml5/locales/zh-CN.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /inputs-ext/wysihtml5.js - 304 Not Modified (3ms)
+
+
+Started GET "/assets/social-share-button.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:37 +0800
+Served asset /bootstrap-wysihtml5/locales/zh-CN.js - 304 Not Modified (3ms)
+Served asset /social-share-button.js - 304 Not Modified (2ms)
+
+
+Started GET "/assets/zeroclipboard/ZeroClipboard.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /zeroclipboard/ZeroClipboard.js - 200 OK (2ms)
+
+
+Started GET "/assets/zeroclipboard.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+
+
+Started GET "/assets/zeroclipboard/asset-path.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /zeroclipboard/asset-path.js - 200 OK (1ms)
+
+
+Started GET "/assets/blogs.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /zeroclipboard.js - 200 OK (5ms)
+
+
+Started GET "/assets/comments.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /blogs.js - 304 Not Modified (1ms)
+Served asset /comments.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/favorite.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+
+
+Started GET "/assets/photoes.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /favorite.js - 200 OK (1ms)
+Served asset /photoes.js - 200 OK (1ms)
+
+
+Started GET "/assets/datetimepicker_util.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+
+
+Started GET "/assets/topics.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /datetimepicker_util.js - 304 Not Modified (1ms)
+Served asset /topics.js - 200 OK (1ms)
+
+
+Started GET "/assets/follows.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+
+
+Started GET "/assets/home.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /follows.js - 304 Not Modified (1ms)
+Served asset /home.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/items.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+
+
+Started GET "/assets/omniauth_callbacks.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /items.js - 304 Not Modified (1ms)
+
+
+Started GET "/assets/users.js?body=1" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /users.js - 304 Not Modified (1ms)
+Served asset /omniauth_callbacks.js - 304 Not Modified (42ms)
+
+
+Started GET "/assets/images/favicon.ico" for 127.0.0.1 at 2014-02-26 19:20:38 +0800
+Served asset /images/favicon.ico - 404 Not Found (15ms)
+
+ActionController::RoutingError (No route matches [GET] "/assets/images/favicon.ico"):
+  actionpack (3.2.16) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.16) lib/rails/rack/logger.rb:32:in `call_app'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `block in call'
+  activesupport (3.2.16) lib/active_support/tagged_logging.rb:22:in `tagged'
+  railties (3.2.16) lib/rails/rack/logger.rb:16:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.5) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.5) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.16) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.5) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.16) lib/action_dispatch/middleware/static.rb:63:in `call'
+  railties (3.2.16) lib/rails/engine.rb:484:in `call'
+  railties (3.2.16) lib/rails/application.rb:231:in `call'
+  railties (3.2.16) lib/rails/railtie/configurable.rb:30:in `method_missing'
+  rack (1.4.5) lib/rack/lint.rb:48:in `_call'
+  rack (1.4.5) lib/rack/lint.rb:36:in `call'
+  rack (1.4.5) lib/rack/showexceptions.rb:24:in `call'
+  rack (1.4.5) lib/rack/commonlogger.rb:33:in `call'
+  rack (1.4.5) lib/rack/chunked.rb:43:in `call'
+  rack (1.4.5) lib/rack/content_length.rb:14:in `call'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:580:in `process_client'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:660:in `worker_loop'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:527:in `spawn_missing_workers'
+  unicorn (4.7.0) lib/unicorn/http_server.rb:153:in `start'
+  unicorn (4.7.0) bin/unicorn:126:in `<top (required)>'
+  /home/been/.rvm/gems/ruby-1.9.3-p429/bin/unicorn:19:in `load'
+  /home/been/.rvm/gems/ruby-1.9.3-p429/bin/unicorn:19:in `<main>'
+  /home/been/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `eval'
+  /home/been/.rvm/gems/ruby-1.9.3-p429/bin/ruby_noexec_wrapper:14:in `<main>'
+
+
+  Rendered /home/been/.rvm/gems/ruby-1.9.3-p429/gems/actionpack-3.2.16/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (3.6ms)
