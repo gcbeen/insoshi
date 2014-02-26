@@ -21,7 +21,7 @@ group :assets do
   #gem 'jquery-timepicker-addon-rails', :git => 'git://github.com/gcbeen/jquery-timepicker-addon-rails.git'
   gem 'therubyracer', :platforms => :ruby
 
-  gem 'uglifier', '>= 1.0.3'
+  #gem 'uglifier', '>= 1.0.3'
 end
 
 gem 'jquery-rails'

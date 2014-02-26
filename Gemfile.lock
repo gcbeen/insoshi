@@ -108,9 +108,6 @@ GEM
       execjs
       railties (>= 3.1)
     tzinfo (0.3.38)
-    uglifier (2.3.2)
-      execjs (>= 0.3.0)
-      json (>= 1.8.0)
 
 PLATFORMS
   ruby
@@ -124,4 +121,3 @@ DEPENDENCIES
   sass-rails (~> 3.2.3)
   therubyracer
   twitter-bootstrap-rails
-  uglifier (>= 1.0.3)
