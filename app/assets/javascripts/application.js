@@ -13,10 +13,10 @@
 //= require jquery
 //= require jquery_ujs
 //= require twitter/bootstrap
-//= require jquery.ui.all
-//= require jquery.ui.datepicker-zh-CN
-//= require jquery-ui-timepicker-addon
-//= require jquery-ui-timepicker-zh-CN
+// require jquery.ui.all
+// require jquery.ui.datepicker-zh-CN
+// require jquery-ui-timepicker-addon
+// require jquery-ui-timepicker-zh-CN
 //= require bootstrap
 //= require bootstrap-editable
 //= require bootstrap-editable-rails
@@ -24,7 +24,7 @@
 //= require inputs-ext/wysihtml5
 //= require bootstrap-wysihtml5/locales/zh-CN
 //= require social-share-button
-//= require jquery-hotkeys
+// require jquery-hotkeys
 //= require zeroclipboard
 //= require_tree .
 $.fn.editable.defaults.ajaxOptions = {type: "PUT"};
