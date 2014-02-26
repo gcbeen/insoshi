@@ -122,7 +122,6 @@ GEM
     mini_portile (0.5.2)
     multi_json (1.8.4)
     multipart-post (1.2.0)
-    mysql2 (0.3.15)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9)
     nokogiri (1.6.1)
@@ -167,6 +166,7 @@ GEM
       activesupport (>= 3.0.0)
       cocaine (~> 0.5.3)
       mime-types
+    pg (0.15.1)
     polyglot (0.3.4)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
@@ -281,7 +281,6 @@ DEPENDENCIES
   jquery-rails
   likeit
   magic_encoding
-  mysql2 (~> 0.3.15)
   omniauth (~> 1.1.4)
   omniauth-github
   omniauth-google-oauth2
@@ -289,6 +288,7 @@ DEPENDENCIES
   omniauth-qq
   omniauth-weibo-oauth2
   paperclip (~> 3.0)
+  pg
   pry
   pry-rails
   public_activity
