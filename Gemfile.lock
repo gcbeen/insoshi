@@ -42,9 +42,16 @@ GEM
     activesupport (3.2.16)
       i18n (~> 0.6, >= 0.6.4)
       multi_json (~> 1.0)
+    acts_as_commentable_with_threading (1.2.0)
+      activerecord (>= 3.0)
+      activesupport (>= 3.0)
+      awesome_nested_set (>= 2.0)
+    acts_as_favable (1.0.1)
     acts_as_follower (0.1.1)
     arel (3.0.3)
     atomic (1.1.14)
+    awesome_nested_set (2.1.6)
+      activerecord (>= 3.0.0)
     bcrypt-ruby (3.1.2)
     bootstrap-will_paginate (0.0.10)
       will_paginate
@@ -84,6 +91,7 @@ GEM
     jwt (0.1.10)
       multi_json (>= 1.5)
     libv8 (3.16.14.3)
+    likeit (0.0.2)
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
@@ -131,6 +139,11 @@ GEM
       cocaine (~> 0.5.3)
       mime-types
     polyglot (0.3.4)
+    public_activity (1.4.1)
+      actionpack (>= 3.0.0)
+      activerecord (>= 3.0)
+      i18n (>= 0.5.0)
+      railties (>= 3.0.0)
     rack (1.4.5)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -201,11 +214,15 @@ GEM
     warden (1.2.3)
       rack (>= 1.0)
     will_paginate (3.0.5)
+    zeroclipboard-rails (0.0.12)
+      railties (>= 3.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  acts_as_commentable_with_threading
+  acts_as_favable
   acts_as_follower (~> 0.1.1)
   bootstrap-editable-rails!
   bootstrap-will_paginate
@@ -215,6 +232,7 @@ DEPENDENCIES
   google_custom_search
   gravtastic
   jquery-rails
+  likeit
   mysql2 (~> 0.3.15)
   omniauth (~> 1.1.4)
   omniauth-github
@@ -223,6 +241,7 @@ DEPENDENCIES
   omniauth-qq
   omniauth-weibo-oauth2
   paperclip (~> 3.0)
+  public_activity
   rails (= 3.2.16)
   rails_12factor
   sass-rails (~> 3.2.3)
@@ -232,3 +251,4 @@ DEPENDENCIES
   twitter-bootstrap-rails
   uglifier (>= 1.0.3)
   will_paginate (~> 3.0)
+  zeroclipboard-rails
