@@ -62,10 +62,10 @@ gem 'public_activity'
 #gem 'jquery-hotkeys-rails'
 #gem 'jquery-atwho-rails'
 
-#group :development do
-#  gem 'pry'
-#  gem 'pry-rails'
-#end
+group :development do
+  gem 'pry'
+  gem 'pry-rails'
+end
 #gem 'font-awesome-sass'
 
 #gem 'ruby-openid', :require => 'openid'
