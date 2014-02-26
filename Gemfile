@@ -31,9 +31,9 @@ gem 'simple_form', '~> 2.0.0'
 gem 'bootstrap-editable-rails', :git => 'git://github.com/gcbeen/bootstrap-editable-rails.git'
 gem 'bootstrap-wysihtml5-rails', :git => 'git://github.com/gcbeen/bootstrap-wysihtml5-rails.git'
 
-#gem 'devise'
-#gem 'omniauth', '~> 1.1.4'
-#gem 'omniauth-google-oauth2'
+gem 'devise'
+gem 'omniauth', '~> 1.1.4'
+gem 'omniauth-google-oauth2'
 #gem 'oa-oauth', :require => 'omniauth/oauth'
 #gem 'oa-openid', :require => 'omniauth/openid'
 
@@ -41,11 +41,11 @@ gem 'bootstrap-wysihtml5-rails', :git => 'git://github.com/gcbeen/bootstrap-wysi
 #gem 'omniauth-googlefederated'
 
 #gem 'authlogic'
-#gem 'omniauth-openid', '~> 1.0.1'
-#gem 'omniauth-github'
-#gem 'omniauth-weibo-oauth2'
-#gem 'omniauth-qq'
-#gem 'social-share-button'
+gem 'omniauth-openid', '~> 1.0.1'
+gem 'omniauth-github'
+gem 'omniauth-weibo-oauth2'
+gem 'omniauth-qq'
+gem 'social-share-button'
 
 
 #gem "acts_as_follower", '~> 0.1.1'
