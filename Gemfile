@@ -69,7 +69,6 @@ group :development do
   gem 'magic_encoding'
   gem 'annotate', '~> 2.6.0'
   #gem 'rdiscount'
-  gem 'unicorn'
 end
 #gem 'font-awesome-sass'
 
@@ -77,6 +76,7 @@ end
 #gem "open_id_authentication", "~> 1.2.0"
 #gem 'authlogic-oid', '~> 1.0.4'
 
+gem 'unicorn'
 gem 'rails_12factor'
 
 
