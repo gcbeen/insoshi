@@ -24,7 +24,7 @@ gem "mysql2", "~> 0.3.15"
 #  gem 'uglifier', '>= 1.0.3'
 #end
 
-gem 'jquery-rails'
+#gem 'jquery-rails'
 
 #gem "paperclip", '~> 3.0'
 #gem 'simple_form', '~> 2.0.0'
