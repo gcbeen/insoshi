@@ -72,7 +72,7 @@ gem 'jquery-rails'
 #gem "open_id_authentication", "~> 1.2.0"
 #gem 'authlogic-oid', '~> 1.0.4'
 
-#gem 'rails_12factor'
+gem 'rails_12factor'
 
 #gem 'i18n_generators'
 #gem 'magic_encoding'
