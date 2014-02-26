@@ -16,7 +16,7 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  gem 'twitter-bootstrap-rails'
+  #gem 'twitter-bootstrap-rails'
   #gem 'jquery-ui-rails'
   #gem 'jquery-timepicker-addon-rails', :git => 'git://github.com/gcbeen/jquery-timepicker-addon-rails.git'
   gem 'therubyracer', :platforms => :ruby
@@ -27,13 +27,13 @@ end
 gem 'jquery-rails'
 
 #gem "paperclip", '~> 3.0'
-gem 'simple_form', '~> 2.0.0'
-gem 'bootstrap-editable-rails', :git => 'git://github.com/gcbeen/bootstrap-editable-rails.git'
-gem 'bootstrap-wysihtml5-rails', :git => 'git://github.com/gcbeen/bootstrap-wysihtml5-rails.git'
+#gem 'simple_form', '~> 2.0.0'
+#gem 'bootstrap-editable-rails', :git => 'git://github.com/gcbeen/bootstrap-editable-rails.git'
+#gem 'bootstrap-wysihtml5-rails', :git => 'git://github.com/gcbeen/bootstrap-wysihtml5-rails.git'
 #
-gem 'devise'
+#gem 'devise'
 #gem 'omniauth', '~> 1.1.4'
-gem 'omniauth-google-oauth2'
+#gem 'omniauth-google-oauth2'
 #gem 'oa-oauth', :require => 'omniauth/oauth'
 #gem 'oa-openid', :require => 'omniauth/openid'
 
@@ -41,22 +41,22 @@ gem 'omniauth-google-oauth2'
 #gem 'omniauth-googlefederated'
 
 #gem 'authlogic'
-gem 'omniauth-openid', '~> 1.0.1'
-gem 'omniauth-github'
-gem 'omniauth-weibo-oauth2'
-gem 'omniauth-qq'
-gem 'social-share-button'
+#gem 'omniauth-openid', '~> 1.0.1'
+#gem 'omniauth-github'
+#gem 'omniauth-weibo-oauth2'
+#gem 'omniauth-qq'
+#gem 'social-share-button'
 
 
-gem "acts_as_follower", '~> 0.1.1'
-gem 'gravtastic'
+#gem "acts_as_follower", '~> 0.1.1'
+#gem 'gravtastic'
 #gem "google_custom_search"
 #gem 'will_paginate', '~> 3.0'
 #gem 'bootstrap-will_paginate'
-gem 'likeit'
+#gem 'likeit'
 #gem 'acts_as_favable'
 #gem 'acts_as_commentable_with_threading'
-gem 'zeroclipboard-rails'
+#gem 'zeroclipboard-rails'
 #gem 'public_activity'
 
 #gem 'jquery-hotkeys-rails'
