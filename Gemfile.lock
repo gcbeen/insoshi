@@ -58,6 +58,11 @@ GEM
     bcrypt-ruby (3.1.2)
     bootstrap-will_paginate (0.0.10)
       will_paginate
+    bootstrap_helper (3.2.2.1)
+      railties (~> 3.0)
+      simple_form (~> 2.0.2)
+      thor (~> 0.14)
+      will_paginate (>= 3.0.3)
     builder (3.0.4)
     climate_control (0.0.3)
       activesupport (>= 3.0)
@@ -273,6 +278,7 @@ DEPENDENCIES
   bootstrap-editable-rails!
   bootstrap-will_paginate
   bootstrap-wysihtml5-rails!
+  bootstrap_helper
   coffee-rails (~> 3.2.1)
   devise
   google_custom_search
