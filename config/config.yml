@@ -1,8 +1,53 @@
 development:
   per_page: 20
+  google_oauth2:
+    key: '22048821128-on3e389hgqg2vg0litekcmorrrkfc7p6.apps.googleusercontent.com'
+    secret: 'eyeAs4Po8WtH7133uh51bNd_'
+  github:
+    key: '861d23c6dd50e051a9b5'
+    secret: '47a7e4e7ba513ea5472cb3e40994fa770a563328'
+  weibo:
+    key: '3095884180'
+    secret: '1251f5da9e09e592ddee391b94fa8a7b'
+  tqq:
+    key: '801472228'
+    secret: 'f45ffd7ae71162600c76e5102d52864a'
+  qq_connect:
+    key: '101009723'
+    secret: '7dc8bbb0e476a3f77664a4a7e60ee0b4'
 
 test:
-  per_page: 1
+  per_page: 20
+  google_oauth2:
+    key: '22048821128-on3e389hgqg2vg0litekcmorrrkfc7p6.apps.googleusercontent.com'
+    secret: 'eyeAs4Po8WtH7133uh51bNd_'
+  github:
+    key: '861d23c6dd50e051a9b5'
+    secret: '47a7e4e7ba513ea5472cb3e40994fa770a563328'
+  weibo:
+    key: '3095884180'
+    secret: '1251f5da9e09e592ddee391b94fa8a7b'
+  tqq:
+    key: '801472228'
+    secret: 'f45ffd7ae71162600c76e5102d52864a'
+  qq_connect:
+    key: '101009723'
+    secret: '7dc8bbb0e476a3f77664a4a7e60ee0b4'
 
 production:
-  per_page: 1
+  per_page: 20
+  google_oauth2:
+    key: '22048821128-lrtbpb800jtvepecceheo58l50adscab.apps.googleusercontent.com'
+    secret: '2MSXkE1L-gJqPeZIzS82T2tP'
+  github:
+    key: '8ea28b61b0b43bcc7e99'
+    secret: 'fdfe16d1485b7b3ddfd6e75e0b69d198d7e7b303'
+  weibo:
+    key: '3699315759'
+    secret: '36e6c33d8d9f6653b0151093b08d616d'
+  tqq:
+    key: '801472228'
+    secret: 'f45ffd7ae71162600c76e5102d52864a'
+  qq_connect:
+    key: '101009723'
+    secret: '7dc8bbb0e476a3f77664a4a7e60ee0b4'

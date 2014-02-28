@@ -232,13 +232,13 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
-  config.omniauth :google_oauth2, '22048821128-on3e389hgqg2vg0litekcmorrrkfc7p6.apps.googleusercontent.com', 'eyeAs4Po8WtH7133uh51bNd_'
-  #config.omniauth :open_id, :store => OpenID::Store::Filesystem.new('/tmp'), 
-  #	  :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id', :require => 'omniauth-openid'
-  config.omniauth :github, '861d23c6dd50e051a9b5', '47a7e4e7ba513ea5472cb3e40994fa770a563328'
-  config.omniauth :weibo, '3095884180', '1251f5da9e09e592ddee391b94fa8a7b'
-  config.omniauth :tqq, '801472228', 'f45ffd7ae71162600c76e5102d52864a'
-  config.omniauth :qq_connect, '101009723', '7dc8bbb0e476a3f77664a4a7e60ee0b4'
+  config.omniauth :google_oauth2, APP_CONFIG[:google_oauth2][:key], APP_CONFIG[:google_oauth2][:secret]
+  config.omniauth :open_id, :store => OpenID::Store::Filesystem.new('/tmp'), 
+  	  :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id', :require => 'omniauth-openid'
+  config.omniauth :github, APP_CONFIG[:github][:key], APP_CONFIG[:github][:secret]
+  config.omniauth :weibo, APP_CONFIG[:weibo][:key], APP_CONFIG[:weibo][:secret]
+  config.omniauth :tqq, APP_CONFIG[:tqq][:key], APP_CONFIG[:tqq][:secret]
+  config.omniauth :qq_connect, APP_CONFIG[:qq_connect][:key], APP_CONFIG[:qq_connect][:secret]
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
