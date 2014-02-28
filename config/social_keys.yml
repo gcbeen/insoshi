@@ -7,8 +7,8 @@ development:
   weibo_secret: '1251f5da9e09e592ddee391b94fa8a7b'
   tqq_key: '801472228'
   tqq_secret: 'f45ffd7ae71162600c76e5102d52864a'
-  qq_connect_key: '101009723'
-  qq_connect_secret: '7dc8bbb0e476a3f77664a4a7e60ee0b4'
+  qq_connect_key: '101028537'
+  qq_connect_secret: '7346f877aa19defc11b9b84f28506f73'
 
 test:
   google_oauth2_key: '22048821128-on3e389hgqg2vg0litekcmorrrkfc7p6.apps.googleusercontent.com'
@@ -19,8 +19,8 @@ test:
   weibo_secret: '1251f5da9e09e592ddee391b94fa8a7b'
   tqq_key: '801472228'
   tqq_secret: 'f45ffd7ae71162600c76e5102d52864a'
-  qq_connect_key: '101009723'
-  qq_connect_secret: '7dc8bbb0e476a3f77664a4a7e60ee0b4'
+  qq_connect_key: '101028537'
+  qq_connect_secret: '7346f877aa19defc11b9b84f28506f73'
 
 production:
   google_oauth2_key: '22048821128-lrtbpb800jtvepecceheo58l50adscab.apps.googleusercontent.com'

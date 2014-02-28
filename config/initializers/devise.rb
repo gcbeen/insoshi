@@ -233,6 +233,7 @@ Devise.setup do |config|
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
   config.omniauth :google_oauth2, ENV['GOOGLE_OAUTH2_KEY'], ENV['GOOGLE_OAUTH2_SECRET']
+  #config.omniauth :google_oauth2, '22048821128-on3e389hgqg2vg0litekcmorrrkfc7p6.apps.googleusercontent.com', 'eyeAs4Po8WtH7133uh51bNd_'
   config.omniauth :open_id, :store => OpenID::Store::Filesystem.new('/tmp'), 
   	  :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id', :require => 'omniauth-openid'
   config.omniauth :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']

@@ -60,5 +60,12 @@ module Insoshi
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+
+    SOCIAL_KEYS = YAML.load_file("#{Rails.root}/config/social_keys.yml")[Rails.env]
+    SOCIAL_KEYS.each do |k, v|
+      ENV[k.upcase] ||= v
+    end
+
   end
 end
