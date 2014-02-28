@@ -61,6 +61,18 @@ module Insoshi
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
 
+    Paperclip.options[:command_path] = "/usr/bin/"
+    config.action_mailer.delivery_method = :smtp
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.smtp_settings = {
+      :address => "smtp.126.com",
+      :port => 25,
+      :domain => '126.com',
+      :authentication => 'plain',
+      #:enable_starttls_auto => true,
+      :user_name => "johngcb@126.com", #你的邮箱
+      :password => "gcb123456" #你的密码
+    }
 
     SOCIAL_KEYS = YAML.load_file("#{Rails.root}/config/social_keys.yml")[Rails.env]
     SOCIAL_KEYS.each do |k, v|

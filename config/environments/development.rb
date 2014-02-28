@@ -37,17 +37,6 @@ Insoshi::Application.configure do
   # Expands the lines which load the assets
   config.assets.debug = true
 
-  Paperclip.options[:command_path] = "/usr/bin/"
   config.action_mailer.default_url_options = { :host => 'insoshi100.com' }
-  config.action_mailer.delivery_method = :smtp
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.smtp_settings = {
-    :address => "smtp.126.com",
-    :port => 25,
-    :domain => '126.com',
-    :authentication => 'plain',
-    #:enable_starttls_auto => true,
-    :user_name => "johngcb@126.com", #你的邮箱
-    :password => "gcb123456" #你的密码
-  }
 end
+
