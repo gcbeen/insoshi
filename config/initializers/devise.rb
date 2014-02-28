@@ -232,13 +232,13 @@ Devise.setup do |config|
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
   # config.omniauth :github, 'APP_ID', 'APP_SECRET', :scope => 'user,public_repo'
-  config.omniauth :google_oauth2, APP_CONFIG[:google_oauth2][:key], APP_CONFIG[:google_oauth2][:secret]
+  config.omniauth :google_oauth2, ENV['GOOGLE_OAUTH2_KEY'], ENV['GOOGLE_OAUTH2_SECRET']
   config.omniauth :open_id, :store => OpenID::Store::Filesystem.new('/tmp'), 
   	  :name => 'google', :identifier => 'https://www.google.com/accounts/o8/id', :require => 'omniauth-openid'
-  config.omniauth :github, APP_CONFIG[:github][:key], APP_CONFIG[:github][:secret]
-  config.omniauth :weibo, APP_CONFIG[:weibo][:key], APP_CONFIG[:weibo][:secret]
-  config.omniauth :tqq, APP_CONFIG[:tqq][:key], APP_CONFIG[:tqq][:secret]
-  config.omniauth :qq_connect, APP_CONFIG[:qq_connect][:key], APP_CONFIG[:qq_connect][:secret]
+  config.omniauth :github, ENV['GITHUB_KEY'], ENV['GITHUB_SECRET']
+  config.omniauth :weibo, ENV['WEIBO_KEY'], ENV['WEIBO_SECRET']
+  config.omniauth :tqq, ENV['TQQ_KEY'], ENV['TQQ_SECRET']
+  config.omniauth :qq_connect, ENV['QQ_CONNECT_KEY'], ENV['QQ_CONNECT_SECRET']
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
   # change the failure app, you can configure them inside the config.warden block.
